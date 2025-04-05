@@ -33,65 +33,68 @@ header {
 }
 
 /* Индивидуальные стили для картинок */
-.img1 {
-  width: 300px;         /* Ширина картинки 1 */
-  height: 300px;        /* Высота картинки 1 */
-  object-fit: cover;    /* Картинка будет обрезана по размеру */
-}
-
-.img2 {
-  width: 300px;         /* Ширина картинки 2 */
-  height: 300px;        /* Высота картинки 2 */
-  object-fit: cover;    /* Поддержка аккуратного отображения */
-}
-
-.img3 {
-width: 300px;         /* Ширина картинки 3 */
-  height: 300px;        /* Высота картинки 3 */
-  object-fit: cover;    /* Поддержка аккуратного отображения */
+.img1, .img2, .img3 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* обрезка по размеру */
 }
 
 /* Подпись под изображениями */
 .caption {
   font-style: Muli;
-  font-size: 1.2em;
-  color: #000000;
-  margin: 10px 0;
-}
-/* Стили для подписи под изображением */
-.caption {
-  font-style: Muli;        /* Курсив */
   font-size: 1em;          /* Размер шрифта */
-  color: #333;               /* Цвет текста */
-  margin: 10px 0;            /* Отступ сверху и снизу */
-  text-align: center;        /* Выравнивание по центру */
+  color: #333;             /* Цвет текста */
+  margin: 10px 0;          /* Отступ сверху и снизу */
+  text-align: center;      /* Выравнивание по центру */
 }
 
-/* Стили для описания товара под подписью */
+/* Описание товара */
 .description {
-  font-size: 1.2em;            /* Размер текста (изменяй: 0.8em – меньше, 1.2em – больше) */
-  color: #444;               /* Цвет (можно заменить на #222, #666 и т.д.) */
-  margin: 10px 0;            /* Отступы сверху и снизу */
-  line-height: 1.5;          /* Межстрочный интервал */
-  text-align: center;       /* Выравнивание текста по ширине (можно изменить на left, center, right) */
-}
-.cost{
-  font: cairo;
-  font-size: 1.5;
-  color: black;
+  font-size: 1.2em;
+  color: #444;
   margin: 10px 0;
-  line-height: ;
+  line-height: 1.5;
   text-align: center;
 }
 
-.order-button {
+/* Стоимость */
+.cost {
+  font-family: Cairo, sans-serif;
+  font-size: 1.5em;
+  color: black;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Общий стиль для всех кнопок */
+.button {
   background: #5c3c3c;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+/* Эффект наведения */
+.button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Эффект нажатия */
+.button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+/* Стили для конкретных кнопок */
+.order-button {
+  /* уже всё включено в .button */
+}
+
+.submit-button {
+  /* уже всё включено в .button */
 }
 
 .order-form {
@@ -111,13 +114,13 @@ width: 300px;         /* Ширина картинки 3 */
   border-radius: 5px;
 }
 
-.submit-button {
-  background: #5c3c3c;
-  color: white;
+.order-form textarea {
+  resize: none;
+  width: 80%;
   padding: 10px;
-  border: none;
+  margin: 10px 0;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 footer {
