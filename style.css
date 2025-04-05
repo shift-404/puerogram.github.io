@@ -6,77 +6,101 @@ body {
   color: white;                   /* сделаем текст светлым */
 }
 
-
 header {
- background: rgba(92, 60, 60, 0.8); /* Полупрозрачный фон */
- color: white;
- padding: 20px;
- text-align: center;
+  background: rgba(92, 60, 60, 0.8); /* Полупрозрачный фон */
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 .container {
- width: 90%;
- margin: auto;
- overflow: hidden;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .product {
- background: white;
- border: 1px solid #ddd;
- border-radius: 5px;
- margin: 20px 0;
- padding: 20px;
- text-align: center;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
 }
 
 .product img {
- max-width: 100%;
- height: auto;
- border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Индивидуальные стили для картинок */
+.img1 {
+  width: 250px;         /* Ширина картинки 1 */
+  height: 250px;        /* Высота картинки 1 */
+  object-fit: cover;    /* Картинка будет обрезана по размеру */
+}
+
+.img2 {
+  width: 250px;         /* Ширина картинки 2 */
+  height: 250px;        /* Высота картинки 2 */
+  object-fit: cover;    /* Поддержка аккуратного отображения */
+}
+
+.img3 {
+width: 250px;         /* Ширина картинки 3 */
+  height: 250px;        /* Высота картинки 3 */
+  object-fit: cover;    /* Поддержка аккуратного отображения */
+}
+
+/* Подпись под изображениями */
+.caption {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #333;
+  margin: 10px 0;
 }
 
 .order-button {
- background: #5c3c3c;
- color: white;
- padding: 10px 20px;
- border: none;
- border-radius: 5px;
- cursor: pointer;
- margin-top: 10px;
+  background: #5c3c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .order-form {
- display: none;
- margin-top: 20px;
- background: #fff;
- padding: 20px;
- border-radius: 5px;
- border: 1px solid #ddd;
+  display: none;
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 .order-form input {
- width: 80%;
- padding: 10px;
- margin: 10px 0;
- border: 1px solid #ddd;
- border-radius: 5px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .submit-button {
- background: #5c3c3c;
- color: white;
- padding: 10px;
- border: none;
- border-radius: 5px;
- cursor: pointer;
+  background: #5c3c3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
- background: rgba(92, 60, 60, 0.8); /* Полупрозрачный фон */
- color: white;
- text-align: center;
- padding: 20px;
- position: relative;
- bottom: 0;
- width: 100%;
+  background: rgba(92, 60, 60, 0.8); /* Полупрозрачный фон */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
