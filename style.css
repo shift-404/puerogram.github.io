@@ -1,5 +1,5 @@
 body {
-  background-image: url('background.jpg');
+  background-image: url('img/background.jpg');
   background-size: cover;         /* чтобы растянуть на весь экран */
   background-position: center;    /* выравнивание */
   background-repeat: no-repeat;   /* не повторять фон */
