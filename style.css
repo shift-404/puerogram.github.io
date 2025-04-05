@@ -75,6 +75,14 @@ width: 300px;         /* Ширина картинки 3 */
   line-height: 1.5;          /* Межстрочный интервал */
   text-align: center;       /* Выравнивание текста по ширине (можно изменить на left, center, right) */
 }
+.cost{
+  font: cairo;
+  font-size: 1.5;
+  color: black;
+  margin: 10px 0;
+  line-height: ;
+  text-align: center;
+}
 
 .order-button {
   background: #5c3c3c;
