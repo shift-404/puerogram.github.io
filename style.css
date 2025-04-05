@@ -2,7 +2,7 @@ body {
  font-family: Arial, sans-serif;
  margin: 0;
  padding: 0;
- background-image: url('background.jpg'); /* Путь к изображению фона */
+ background-image: url('background.png'); /* Путь к изображению фона */
  background-size: cover;
  background-position: center;
  color: #333;
