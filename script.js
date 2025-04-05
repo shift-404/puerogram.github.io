@@ -10,7 +10,7 @@ document.querySelector(".submit-button").addEventListener("click", function () {
   const message = `📦 Новый заказ:\n👤 ФИО: ${name}\n📞 Телефон: ${phone}\n📍 Адрес: ${address}`;
 
   const token = "8053319699:AAEsdTfvQAQicncNDS1F3jGRqkcDb81eOUs";
-  const chat_id = "shift_404"; // Укажите сюда ваш Telegram ID (подробнее ниже)
+  const chat_id = "@shift_404"; // Укажите сюда ваш Telegram ID (подробнее ниже)
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
   fetch(url, {
