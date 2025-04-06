@@ -10,9 +10,9 @@ document.querySelectorAll(".order-button").forEach(button => {
 });
 
 document.querySelector(".submit-button").addEventListener("click", function () {
-  const name = document.querySelector('input[placeholder="ФИО"]').value;
-  const phone = document.querySelector('input[placeholder="Номер телефона"]').value;
-  const address = document.querySelector('input[placeholder="Адрес доставки"]').value;
+const name = document.querySelector('input[placeholder="ПІБ"]').value;
+const phone = document.querySelector('input[placeholder="Номер телефону"]').value;
+const address = document.querySelector('input[placeholder="Адреса доставки"]').value;
   const comment = document.getElementById("comment").value;
 
   const message = `📦 Новый заказ:
