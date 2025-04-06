@@ -13,14 +13,14 @@ document.querySelector(".submit-button").addEventListener("click", function () {
   const name = document.querySelector('input[placeholder="ФИО"]').value;
   const phone = document.querySelector('input[placeholder="Номер телефона"]').value;
   const address = document.querySelector('input[placeholder="Адрес доставки"]').value;
-  
+  const comment = document.getElementById("comment").value;
 
   const message = `📦 Новый заказ:
 🫖 Товар: ${selectedProduct || "Не выбран"}
 👤 ФИО: ${name}
 📞 Телефон: ${phone}
 📍 Адрес: ${address}
-
+📨 Комментарий: ${comment || "Нет"}`;
 
 
 
