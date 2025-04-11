@@ -25,14 +25,38 @@ header, footer {
   margin: 20px 0;
   padding: 20px;
   text-align: center;
-  justify-content: center;
 }
+
+.product img {
+  border-radius: 5px;
+}
+
 
 .product img {
   border-radius: 5px;
   width: 300px;
   height: 300px;
   object-fit: cover;
+}
+
+.product {
+  display: none; /* скрыты по умолчанию */
+}
+
+.product.visible {
+  display: block; /* показываются по мере загрузки */
+}
+
+#loadMore {
+  margin: 30px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #6b4f2a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 .caption {
@@ -46,19 +70,6 @@ header, footer {
   color: #444;
   margin: 10px 0;
   text-align: center;
-}
-
-.products-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 в ряд */
-  gap: 20px;
-  padding: 20px;
-  justify-items: center; /* Центрирует карточки */
-}
-
-.product {
-  width: 100%;
-  max-width: 320px; /* чтобы карточки были аккуратными */
 }
 
 
