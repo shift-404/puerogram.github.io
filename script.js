@@ -76,3 +76,24 @@ window.onload = function () {
     })
     .catch(error => console.error("Помилка гео-IP:", error));
 }
+
+  const products = document.querySelectorAll('.product');
+  const loadMoreBtn = document.getElementById('loadMore');
+
+  let visibleCount = 0;
+  const step = 5;
+
+  function showProducts() {
+    for (let i = visibleCount; i < visibleCount + step && i < products.length; i++) {
+      products[i].style.display = 'block';
+    }
+    visibleCount += step;
+
+    if (visibleCount >= products.length) {
+      loadMoreBtn.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', showProducts);
+  loadMoreBtn.addEventListener('click', showProducts);
+
