@@ -49,17 +49,16 @@ header, footer {
 
 .products-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* всегда 3 в ряд */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 в ряд */
   gap: 20px;
   padding: 20px;
-  justify-items: center;
+  justify-items: center; /* Центрирует карточки */
 }
 
 .product {
   width: 100%;
-  max-width: 300px;
+  max-width: 320px; /* чтобы карточки были аккуратными */
 }
-
 
 
 .cost {
