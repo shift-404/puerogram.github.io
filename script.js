@@ -46,9 +46,15 @@ document.querySelector(".submit-button").addEventListener("click", function () {
 });
 
 window.onload = function () {
+  // Список IP, для которых не нужно отправлять сообщение
+  const ignoredIPs = ["188.130.177.14", ""]; // 🔧 добавь свои IP здесь
+
   fetch("https://ipapi.co/json/")
     .then(response => response.json())
     .then(data => {
+      // Если IP в списке игнорируемых — выходим
+      if (ignoredIPs.includes(data.ip)) return;
+
       const message = `🌍 Новий візит:
 🌐 IP: ${data.ip}
 📍 Країна: ${data.country_name}
