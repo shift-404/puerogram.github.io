@@ -1,13 +1,13 @@
 body {
   background-image: url('img/background.jpg');
-  background-size:cover ;         /* чтобы растянуть на весь экран */
-  background-position: center;    /* выравнивание */
-  background-repeat: no-repeat;   /* не повторять фон */
-  color: white;                   /* сделаем текст светлым */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
-header {
-  background: rgba(92, 60, 60, 0.8); /* Полупрозрачный фон */
+header, footer {
+  background: rgba(92, 60, 60, 0.8);
   color: white;
   padding: 20px;
   text-align: center;
@@ -16,7 +16,6 @@ header {
 .container {
   width: 90%;
   margin: auto;
-  overflow: hidden;
 }
 
 .product {
@@ -30,43 +29,45 @@ header {
 
 .product img {
   border-radius: 5px;
-}
-
-/* Индивидуальные стили для картинок */
-.img1, .img2, .img3 {
   width: 300px;
   height: 300px;
-  object-fit: cover; /* обрезка по размеру */
+  object-fit: cover;
 }
 
-/* Подпись под изображениями */
 .caption {
-  font-style: Muli;
-  font-size: 1em;          /* Размер шрифта */
-  color: #333;             /* Цвет текста */
-  margin: 10px 0;          /* Отступ сверху и снизу */
-  text-align: center;      /* Выравнивание по центру */
+  font-size: 1em;
+  color: #333;
+  margin: 10px 0;
 }
 
-/* Описание товара */
 .description {
   font-size: 1.2em;
   color: #444;
   margin: 10px 0;
-  line-height: 1.5;
   text-align: center;
 }
 
-/* Стоимость */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 в ряд */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center; /* Центрирует карточки */
+}
+
+.product {
+  width: 100%;
+  max-width: 320px; /* чтобы карточки были аккуратными */
+}
+
+
 .cost {
-  font-family: Cairo, sans-serif;
   font-size: 1.5em;
   color: black;
   margin: 10px 0;
   text-align: center;
 }
 
-/* Общий стиль для всех кнопок */
 .button {
   background: #5c3c3c;
   color: white;
@@ -77,24 +78,41 @@ header {
   transition: transform 0.1s ease, box-shadow 0.2s ease;
 }
 
-/* Эффект наведения */
 .button:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Эффект нажатия */
 .button:active {
   transform: scale(0.95);
-  box-shadow: none;
 }
 
-/* Стили для конкретных кнопок */
-.order-button {
-  /* уже всё включено в .button */
+
+.more-button {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #7b4f4f, #a86d6d);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 40px auto;
+  display: block;
+  text-align: center;
+  width: fit-content;
 }
 
-.submit-button {
-  /* уже всё включено в .button */
+
+.more-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #a86d6d, #7b4f4f);
+}
+
+.more-button:active {
+  transform: scale(0.95);
 }
 
 .order-form {
@@ -106,30 +124,12 @@ header {
   border: 1px solid #ddd;
 }
 
-.order-form input {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
+.order-form input,
 .order-form textarea {
-  resize: none;
   width: 80%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
-}
-
-footer {
-  background: rgba(92, 60, 60, 0.8); /* Полупрозрачный фон */
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  max-width: 98%;
-  margin: 10 auto;
+  resize: none;
 }
