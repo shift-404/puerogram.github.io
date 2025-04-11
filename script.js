@@ -2,17 +2,17 @@ let selectedProduct = "";
 
 document.querySelectorAll(".order-button").forEach(button => {
   button.addEventListener("click", function () {
-    selectedProduct = this.getAttribute("data-product"); // Получаем название товара
+    selectedProduct = this.getAttribute("data-product");
     const form = document.getElementById("orderForm");
     form.style.display = "block";
-    form.scrollIntoView({ behavior: "smooth" }); // Прокрутка к форме заказа
+    form.scrollIntoView({ behavior: "smooth" });
   });
 });
 
 document.querySelector(".submit-button").addEventListener("click", function () {
-const name = document.querySelector('input[placeholder="ПІБ"]').value;
-const phone = document.querySelector('input[placeholder="Номер телефону"]').value;
-const address = document.querySelector('input[placeholder="Адреса доставки"]').value;
+  const name = document.querySelector('input[placeholder="ПІБ"]').value;
+  const phone = document.querySelector('input[placeholder="Номер телефону"]').value;
+  const address = document.querySelector('input[placeholder="Адреса доставки"]').value;
   const comment = document.getElementById("comment").value;
 
   const message = `📦 Новый заказ:
@@ -21,8 +21,6 @@ const address = document.querySelector('input[placeholder="Адреса дост
 📞 Телефон: ${phone}
 📍 Адрес: ${address}
 📨 Комментарий: ${comment || "Нет"}`;
-
-
 
   const token = "8053319699:AAEsdTfvQAQicncNDS1F3jGRqkcDb81eOUs";
   const chat_id = "1128624110";
@@ -46,7 +44,6 @@ const address = document.querySelector('input[placeholder="Адреса дост
   })
   .catch(error => alert("⚠ Ошибка: " + error));
 });
-
 
 window.onload = function () {
   fetch("https://ipapi.co/json/")
