@@ -19,14 +19,13 @@ header, footer {
 }
 
 .product {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* адаптивно */
-  gap: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
   padding: 20px;
-  justify-content: center; /* Центрирование всех карточек */
-  justify-items: center;    /* Центрирование внутри ячеек */
+  text-align: center;
 }
-
 
 .product img {
   border-radius: 5px;
