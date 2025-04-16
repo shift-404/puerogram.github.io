@@ -65,11 +65,12 @@ function updateCartDisplay() {
   cartItemsContainer.innerHTML = '';
 
   if (cart.length === 0) {
-    checkoutButton.classList.add('hidden');
-    emptyCartMessage.classList.remove('hidden');
+    checkoutButton.style.display = 'none';
+    emptyCartMessage.style.display = 'block';
+
   } else {
-    checkoutButton.classList.remove('hidden');
-    emptyCartMessage.classList.add('hidden');
+  checkoutButton.style.display = 'block';
+  emptyCartMessage.style.display = 'none';
 
     cart.forEach((item, index) => {
       const li = document.createElement('li');
