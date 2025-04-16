@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head> 
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Найкращий пуер з Китаю</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img\logo.png" type="image/png">
+
 </head>
 <body>
   <header>
@@ -13,34 +15,51 @@
     <p>Найкращий чай для справжніх поціновувачів</p>
   </header>
 
-  <!-- Картка товару 1 -->
-  <div class="product">
-    <img src="img/img1.jpg" alt="Пуер 1" class="img1">
-    <p class="caption">Гарний чай для душевного вечора</p>
-    <p class="description">Чай Шу Пуер Ці Цзінь 357 грам</p>
-    <p class="cost">650 грн</p> 
-    <button class="order-button button" data-product="Пуер 1">Замовити</button>
-  </div>
+<!-- Картка товару 1 -->
+<div class="product">
+  <img src="imgProduct/95.jpg" alt="Пуер 8" class="img2">
+  <p class="caption">Скарб із туману Юньнані</p>
+  <p class="description">Чай Білий з Фудіна Шоу Мей Брові Старця 5 шт</p>
+  <p class="cost">210 грн</p>
+  <button class="order-button button" onclick="addToCart('Чай Білий з Фудіна Шоу Мей Брові Старця 5 шт', 'imgProduct/95.jpg')">Замовити</button>
+</div>
 
-  <!-- Картка товару 2 -->
-  <div class="product">
-    <img src="img/img2.jpg" alt="Пуер 2" class="img2">
-    <p class="caption">Чай, що знає, як розслабити</p>
-    <p class="description">Чай Шу Пуер Гун Тін 2009 р. 357 грам</p>
-    <p class="cost">700 грн</p> 
-    <button class="order-button button" data-product="Пуер 2">Замовити</button>
-  </div>
+<div class="product">
+  <img src="img/img1.jpg" alt="Пуер 1" class="img1">
+  <p class="caption">Гарний чай для душевного вечора</p>
+  <p class="description">Чай Шу Пуер Ці Цзінь 357 грам</p>
+  <p class="cost">650 грн</p> 
+  <button class="order-button button" onclick="addToCart('Чай Шу Пуер Ці Цзінь 357 грам', 'img/img1.jpg')">Замовити</button>
+</div>
 
-  <!-- Картка товару 3 -->
-  <div class="product">
-    <img src="img/img3.jpg" alt="Пуер 3" class="img3">
-    <p class="caption">Пуер — коли хочеться просто бути</p>
-    <p class="description">Чай Шу Пуер Золота Печатка Banzhang 2007 р. 357 грам</p>
-    <p class="cost">750 грн</p> 
-    <button class="order-button button" data-product="Пуер 3">Замовити</button>
-  </div>
-  
- <a href="products.html" class="more-button">Ще</a>
+<div class="product">
+  <img src="imgProduct/180.jpg" alt="Пуер 7" class="img1">
+  <p class="caption">Вічна класика з глибини віків</p>
+  <p class="description">Чай Білий зі шкіркою мандарина Fuding старий білий чай 2013 рік</p>
+  <p class="cost">259 грн</p>
+  <button class="order-button button" onclick="addToCart('Чай Білий зі шкіркою мандарина Fuding старий білий чай 2013 рік', 'imgProduct/180.jpg')">Замовити</button>
+</div>
+
+<!-- Картка товару 2 -->
+<div class="product">
+  <img src="img/img2.jpg" alt="Пуер 2" class="img2">
+  <p class="caption">Чай, що знає, як розслабити</p>
+  <p class="description">Чай Шу Пуер Гун Тін 2009 р. 357 грам</p>
+  <p class="cost">700 грн</p> 
+  <button class="order-button button" onclick="addToCart('Чай Шу Пуер Гун Тін 2009 р. 357 грам', 'img/img2.jpg')">Замовити</button>
+</div>
+
+<!-- Картка товару 3 -->
+<div class="product">
+  <img src="img/img3.jpg" alt="Пуер 3" class="img3">
+  <p class="caption">Пуер — коли хочеться просто бути</p>
+  <p class="description">Чай Шу Пуер Золота Печатка Banzhang 2007 р. 357 грам</p>
+  <p class="cost">750 грн</p> 
+  <button class="order-button button" onclick="addToCart('Чай Шу Пуер Золота Печатка Banzhang 2007 р. 357 грам', 'img/img3.jpg')">Замовити</button>
+</div>
+
+   <a href="products.html" class="more-button">Ще</a>
+ <button id="loadMore" class="more-button">Ще</button>
 
   <!-- Форма замовлення -->
   <div class="order-form" id="orderForm">
@@ -56,6 +75,28 @@
     <p>Пуер — це не просто чай, це ціла культура. Відкрийте для себе світ пуеру та насолодіться унікальними смаками, які подарує вам цей дивовижний напій. Ми пропонуємо лише найкращі сорти пуеру, що підійдуть як для щоденного чаювання, так і для особливих подій.</p>
   </footer>
 
+
+  
+  <!-- Кнопка для открытия корзини -->
+<button class="cart-button">🛒 Кошик (<span id="cart-count">0</span>)</button>
+
+
+
+<!-- Уведомление о добавлении в корзину -->
+<div id="cart-modal" class="floating-modal">
+  <p>🛒 Товар додано до кошика!</p>
+  <button onclick="closeModal()">Продовжити</button>
+  <button onclick="goToCart()">Оформити</button>
+</div>
+
+
+<!-- Сама корзина -->
+<div id="cart" class="cart-container">
+  <h3>Ваш кошик</h3>
+  <div id="empty-cart-message" class="empty-cart-message">Ваш кошик порожній</div>
+  <ul id="cart-items"></ul>
+<button id="checkout-button" onclick="checkout()">Оформити замовлення</button>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
