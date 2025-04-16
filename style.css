@@ -29,22 +29,9 @@ header, footer {
 
 .product img {
   border-radius: 5px;
-}
-
-
-.product img {
-  border-radius: 5px;
   width: 300px;
   height: 300px;
   object-fit: cover;
-}
-
-.product {
-  display: none; /* скрыты по умолчанию */
-}
-
-.product.visible {
-  display: block; /* показываются по мере загрузки */
 }
 
 #loadMore {
@@ -72,7 +59,6 @@ header, footer {
   text-align: center;
 }
 
-
 .cost {
   font-size: 1.5em;
   color: black;
@@ -98,7 +84,6 @@ header, footer {
   transform: scale(0.95);
 }
 
-
 .more-button {
   display: inline-block;
   font-size: 1.5em;
@@ -115,7 +100,6 @@ header, footer {
   text-align: center;
   width: fit-content;
 }
-
 
 .more-button:hover {
   transform: scale(1.05);
@@ -144,4 +128,205 @@ header, footer {
   border: 1px solid #ddd;
   border-radius: 5px;
   resize: none;
+}
+
+.cart-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #5c3c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.cart-container {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  background: #fffaf8;
+  color: #333;
+  border: 2px solid #a86d6d;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 1000;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart-container h3 {
+  margin-top: 0;
+  color: #5c3c3c;
+  text-align: center;
+}
+
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.cart-container li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#checkout-button {
+  width: 100%;
+  margin-top: 10px;
+  background: #5c3c3c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#checkout-button:hover {
+  background: #7b4f4f;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 15px;
+  background: #5c3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background: #7b4f4f;
+}
+
+.empty-cart-message {
+  display: none;
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #777;
+  font-style: italic;
+}
+.floating-modal {
+  position: fixed;
+  top: 70px;
+  right: 30px;
+  background: #fffaf8;
+  color: #333;
+  padding: 15px 20px;
+  border: 2px solid #a86d6d;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.floating-modal p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.floating-modal button {
+  margin: 5px 8px 0 0;
+  padding: 6px 12px;
+  background: #5c3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.floating-modal button:hover {
+  background: #7b4f4f;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Показ/скрытие через классы */
+.cart-container {
+  display: none;
+}
+
+.cart-container.show {
+  display: block;
+}
+
+.floating-modal {
+  position: fixed;
+  top: 70px;
+  right: 30px;
+  background: #fffaf8;
+  color: #333;
+  padding: 15px 20px;
+  border: 2px solid #a86d6d;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease-out;
+  width: 280px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.floating-modal.show {
+  display: block;
+}
+
+.floating-modal p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.floating-modal button {
+  margin: 5px 8px 0 0;
+  padding: 6px 12px;
+  background: #5c3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.floating-modal button:hover {
+  background: #7b4f4f;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
