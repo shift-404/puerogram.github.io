@@ -1,6 +1,7 @@
 let cart = [];
 let selectedProduct = "";
-
+const token = "8053319699:AAEsdTfvQAQicncNDS1F3jGRqkcDb81eOUs";
+const chat_id = "1128624110";
 // Обновление количества товаров в корзине
 function updateCartCount() {
   const totalCount = cart.reduce((sum, item) => sum + item.count, 0);
