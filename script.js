@@ -1,4 +1,4 @@
-// cart.js — общий скрипт для всех страниц сайта
+// cart.js — объединённый и исправленный код корзины с работающей кнопкой заказа
 
 let cart = [];
 let selectedProduct = "";
@@ -8,26 +8,24 @@ function loadCart() {
   cart = storedCart ? JSON.parse(storedCart) : [];
 }
 
+function saveCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
 function updateCartCount() {
   const totalCount = cart.reduce((sum, item) => sum + item.count, 0);
   const cartCountElem = document.getElementById("cart-count");
   if (cartCountElem) cartCountElem.innerText = totalCount;
 }
 
-function saveCart() {
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
 function addToCart(productName, imageUrl) {
   loadCart();
   const existingItem = cart.find(item => item.name === productName);
-
   if (existingItem) {
     existingItem.count++;
   } else {
     cart.push({ name: productName, image: imageUrl, count: 1 });
   }
-
   saveCart();
   updateCartCount();
   updateCartDisplay();
@@ -39,10 +37,7 @@ function showModal() {
   const modal = document.getElementById("cart-modal");
   if (!modal) return;
   modal.classList.add("show");
-
-  setTimeout(() => {
-    modal.classList.remove("show");
-  }, 5000);
+  setTimeout(() => modal.classList.remove("show"), 5000);
 }
 
 function closeModal() {
@@ -76,14 +71,12 @@ function updateCartDisplay() {
   if (!cartItemsContainer || !checkoutButton || !emptyCartMessage) return;
 
   cartItemsContainer.innerHTML = '';
-
   if (cart.length === 0) {
     checkoutButton.style.display = 'none';
     emptyCartMessage.style.display = 'block';
   } else {
     checkoutButton.style.display = 'block';
     emptyCartMessage.style.display = 'none';
-
     cart.forEach((item, index) => {
       const li = document.createElement('li');
       li.innerHTML = `
@@ -91,10 +84,19 @@ function updateCartDisplay() {
           <img src="${item.image}" alt="${item.name}" style="width: 40px; height: 40px; object-fit: cover; border-radius: 4px; margin-right: 10px;">
           <span style="flex-grow: 1;">${item.name}</span>
           <span style="margin: 0 10px;">${item.count} шт</span>
-          <button onclick="event.stopPropagation(); removeFromCart(${index})" style="padding: 2px 6px; background: #c44; color: white; border: none; border-radius: 4px; cursor: pointer;">✖</button>
+          <button type="button" class="remove-btn" data-index="${index}" style="padding: 2px 6px; background: #c44; color: white; border: none; border-radius: 4px; cursor: pointer;">✖</button>
         </div>
       `;
       cartItemsContainer.appendChild(li);
+    });
+
+    const removeButtons = document.querySelectorAll('.remove-btn');
+    removeButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        const index = parseInt(button.getAttribute('data-index'));
+        removeFromCart(index);
+      });
     });
   }
 }
@@ -106,7 +108,6 @@ function removeFromCart(index) {
   } else {
     cart.splice(index, 1);
   }
-
   saveCart();
   updateCartCount();
   updateCartDisplay();
@@ -118,7 +119,6 @@ function checkout() {
     alert("Кошик порожній!");
     return;
   }
-
   const cartBox = document.getElementById("cart");
   if (cartBox) cartBox.classList.remove("show");
   const form = document.getElementById("orderForm");
@@ -132,16 +132,19 @@ function initCartSystem() {
   loadCart();
   updateCartDisplay();
   updateCartCount();
-
   const cartToggle = document.querySelectorAll(".cart-button");
   cartToggle.forEach(button => {
     button.addEventListener("click", toggleCart);
   });
 
+  const checkoutButton = document.getElementById('checkout-button');
+  if (checkoutButton) {
+    checkoutButton.addEventListener('click', checkout);
+  }
+
   document.addEventListener("click", function (event) {
     const cartBox = document.getElementById("cart");
     const cartButton = document.querySelector(".cart-button");
-
     if (
       cartBox && cartBox.classList.contains("show") &&
       !cartBox.contains(event.target) &&
@@ -152,8 +155,4 @@ function initCartSystem() {
   });
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener("DOMContentLoaded", initCartSystem);
-} else {
-  initCartSystem();
-}
+document.addEventListener("DOMContentLoaded", initCartSystem);
