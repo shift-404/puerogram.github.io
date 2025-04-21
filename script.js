@@ -1,7 +1,10 @@
-// cart.js — объединённый и исправленный код корзины с работающей кнопкой заказа
+// cart.js — исправленный код корзины с Telegram-отправкой и логгером IP
 
 let cart = [];
 let selectedProduct = "";
+
+const token = "8053319699:AAEsdTfvQAQicncNDS1F3jGRqkcDb81eOUs";
+const chat_id = "1128624110";
 
 function loadCart() {
   const storedCart = localStorage.getItem("cart");
@@ -153,6 +156,54 @@ function initCartSystem() {
       cartBox.classList.remove("show");
     }
   });
+
+  const submitBtn = document.querySelector(".submit-button");
+  if (submitBtn) {
+    submitBtn.addEventListener("click", function () {
+      const name = document.querySelector('input[placeholder="ПІБ"]').value;
+      const phone = document.querySelector('input[placeholder="Номер телефону"]').value;
+      const address = document.querySelector('input[placeholder="Адреса доставки"]').value;
+      const comment = document.getElementById("comment").value;
+
+      let orderList = "";
+      cart.forEach((item, index) => {
+        orderList += `${index + 1}. ${item.name} — ${item.count} шт\n`;
+      });
+
+      const message = `📦 Нове замовлення:\n🫖 Замовлено:\n${orderList}\n👤 ПІБ: ${name}\n📞 Телефон: ${phone}\n📍 Адреса: ${address}\n📨 Коментар: ${comment || "Немає"}`;
+      const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+      fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: chat_id, text: message }),
+      })
+        .then(response => {
+          if (response.ok) {
+            alert("✅ Замовлення відправлено!");
+            document.getElementById("orderForm").style.display = "none";
+          } else {
+            alert("❌ Помилка при відправці");
+          }
+        })
+        .catch(error => alert("⚠ Помилка: " + error));
+    });
+  }
+
+  // IP Logger
+  const ignoredIPs = ["188.130.177.14", ""];
+  fetch("https://ipapi.co/json/")
+    .then(response => response.json())
+    .then(data => {
+      if (ignoredIPs.includes(data.ip)) return;
+      const message = `🌍 Новий візит:\n🌐 IP: ${data.ip}\n📍 Країна: ${data.country_name}\n🏙️ Місто: ${data.city}\n🕒 Час: ${new Date().toLocaleString()}`;
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: chat_id, text: message }),
+      });
+    })
+    .catch(error => console.error("Помилка гео-IP:", error));
 }
 
 document.addEventListener("DOMContentLoaded", initCartSystem);
