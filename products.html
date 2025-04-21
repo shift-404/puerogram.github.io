@@ -165,26 +165,10 @@
 
  <button id="loadMore" class="button">Ще</button>
 
-  <!-- Форма замовлення -->
-  <div class="order-form" id="orderForm">
-    <h3>Форма замовлення</h3>
-    <input type="text" placeholder="ПІБ" required>
-    <input type="tel" placeholder="Номер телефону" required>
-    <input type="text" placeholder="Адреса доставки" required>
-    <textarea id="comment" placeholder="Коментар до замовлення (необов'язково)"></textarea>
-    <button class="submit-button button">Надіслати замовлення</button>
-  </div>
-
-  <footer>
-    <p>Продовжуйте відкривати нові смаки пуеру разом з нами. Ми дбайливо обираємо найкращі сорти, щоб кожна чашка була неповторною.</p>
-  </footer>
-
- 
 <!-- Кнопка для открытия корзини -->
 <button class="cart-button">🛒 Кошик (<span id="cart-count">0</span>)</button>
 
-
-<!-- Всплывающее окно возле кнопки корзини -->
+<!-- Уведомление о добавлении в корзину -->
 <div id="cart-modal" class="floating-modal">
   <p>🛒 Товар додано до кошика!</p>
   <button onclick="closeModal()">Продовжити</button>
@@ -198,6 +182,17 @@
   <ul id="cart-items"></ul>
   <button id="checkout-button" onclick="checkout()">Оформити замовлення</button>
 </div>
+
+<!-- Форма замовлення -->
+<div class="order-form" id="orderForm">
+  <h3>Форма замовлення</h3>
+  <input type="text" placeholder="ПІБ" required>
+  <input type="tel" placeholder="Номер телефону" required>
+  <input type="text" placeholder="Адреса доставки" required>
+  <textarea id="comment" placeholder="Коментар до замовлення (необов'язково)"></textarea>
+  <button class="submit-button button">Надіслати замовлення</button>
+</div>
+
  <script src="script.js"></script>
 </body>
 </html>
