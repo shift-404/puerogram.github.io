@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* тёмный фон */
+  color: #ffffff;
+}
+
+/* Слайдер */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 14 / 3; /* Более "плоский" слайдер */
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px;
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+/* Адаптация для мобилок */
+@media (max-width: 768px) {
+  .slider-btn {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .slider {
+    aspect-ratio: 16 / 7; /* Еще ниже на телефонах */
+  }
+}
+
+/* Заголовок */
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #007acc;
+  display: inline-block;
+}
+
+/* Карточки товаров */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  column-gap: 10px; /* Меньше расстояние */
+  row-gap: 30px;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.product-card {
+  width: 200px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* или contain — на твой вкус */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.product-card p {
+  font-weight: bold;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+}
+.product-card {
+  text-decoration: none; /* убирает подчеркивание */
+  color: inherit; /* делает текст того же цвета, что и остальной текст */
+  display: block; /* чтобы вся карточка была кликабельной */
+}
