@@ -74,13 +74,25 @@ body {
 /* Карточки товаров */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 равные карточки в ряд */
+  grid-template-columns: repeat(3, 1fr); /* за замовчуванням — 3 в ряд */
   gap: 10px;
   justify-content: center;
   padding: 30px 10px;
 }
 
-/* Карточка товара */
+/* ПК — повертаємо як було */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 220px);
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 200px; /* як було */
+  }
+}
+
+/* Карточка */
 .product-card {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -92,15 +104,13 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
-  width: 100%; /* занимать всю доступную ширину в колонке */
+  width: 100%; /* мобільна ширина — розтягується в колонці */
 }
 
-/* При наведении */
 .product-card:hover {
   transform: scale(1.03);
 }
 
-/* Картинка */
 .product-card img {
   width: 100%;
   height: auto;
@@ -109,11 +119,11 @@ body {
   border: none;
 }
 
-/* Текст */
 .product-card p {
   font-weight: bold;
   padding: 15px;
   color: #fff;
   font-size: 14px;
 }
+
 
