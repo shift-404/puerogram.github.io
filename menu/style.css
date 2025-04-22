@@ -72,30 +72,15 @@ body {
 }
 
 /* Карточки товаров */
-/* Сетка карточек */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 220px); /* Стандартно — 3 карточки по 220px */
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 равные карточки в ряд */
+  gap: 10px;
   justify-content: center;
-  padding: 30px 20px;
+  padding: 30px 10px;
 }
 
-/* Адаптация под телефоны */
-@media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряд на планшетах и телефонах */
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: 1fr; /* 1 карточка в ряд на очень узких экранах */
-  }
-}
-
-/* Оформление карточки */
+/* Карточка товара */
 .product-card {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -107,9 +92,10 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
+  width: 100%; /* занимать всю доступную ширину в колонке */
 }
 
-/* Эффект при наведении */
+/* При наведении */
 .product-card:hover {
   transform: scale(1.03);
 }
@@ -119,7 +105,6 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  padding: 0;
   background-color: transparent;
   border: none;
 }
@@ -131,3 +116,4 @@ body {
   color: #fff;
   font-size: 14px;
 }
+
