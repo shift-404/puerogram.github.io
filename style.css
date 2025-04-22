@@ -409,7 +409,15 @@ header, footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 1001;
   transition: background-color 0.3s;
+  
+  /* Центрирование текста */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
 }
+
 
 .promo-button:hover {
   background-color:  #e74c3c;
