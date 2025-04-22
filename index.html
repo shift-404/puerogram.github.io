@@ -21,16 +21,19 @@
   </svg>
 </button>
 
-<!-- Картка товару 1 -->
-<div class="product">
+<div class="product-placeholder" data-id="95"></div>
+
+
+
+<!--<div class="product" data-title="Чай Білий з Фудіна Шоу Мей Брові Старця 5 шт">
   <img src="imgProduct/95.jpg" alt="Пуер 8" class="img2">
   <p class="caption">Скарб із туману Юньнані</p>
   <p class="description">Чай Білий з Фудіна Шоу Мей Брові Старця 5 шт</p>
   <p class="cost">210 грн</p>
   <button class="order-button button" onclick="addToCart('Чай Білий з Фудіна Шоу Мей Брові Старця 5 шт', 'imgProduct/95.jpg')">Замовити</button>
-</div>
+</div> -->
 
-<div class="product">
+<div class="product" data-title="Чай Шу Пуер Ці Цзінь 357 грам">
   <img src="img/img1.jpg" alt="Пуер 1" class="img1">
   <p class="caption">Гарний чай для душевного вечора</p>
   <p class="description">Чай Шу Пуер Ці Цзінь 357 грам</p>
@@ -38,7 +41,7 @@
   <button class="order-button button" onclick="addToCart('Чай Шу Пуер Ці Цзінь 357 грам', 'img/img1.jpg')">Замовити</button>
 </div>
 
-<div class="product">
+<div class="product" data-title="Чай Білий зі шкіркою мандарина Fuding старий білий чай 2013 рік">
   <img src="imgProduct/180.jpg" alt="Пуер 7" class="img1">
   <p class="caption">Вічна класика з глибини віків</p>
   <p class="description">Чай Білий зі шкіркою мандарина Fuding старий білий чай 2013 рік</p>
@@ -46,8 +49,7 @@
   <button class="order-button button" onclick="addToCart('Чай Білий зі шкіркою мандарина Fuding старий білий чай 2013 рік', 'imgProduct/180.jpg')">Замовити</button>
 </div>
 
-<!-- Картка товару 2 -->
-<div class="product">
+<div class="product" data-title="Чай Шу Пуер Гун Тін 2009 р. 357 грам">
   <img src="img/img2.jpg" alt="Пуер 2" class="img2">
   <p class="caption">Чай, що знає, як розслабити</p>
   <p class="description">Чай Шу Пуер Гун Тін 2009 р. 357 грам</p>
@@ -55,8 +57,8 @@
   <button class="order-button button" onclick="addToCart('Чай Шу Пуер Гун Тін 2009 р. 357 грам', 'img/img2.jpg')">Замовити</button>
 </div>
 
-<!-- Картка товару 3 -->
-<div class="product">
+
+<div class="product" data-title="Чай Шу Пуер Золота Печатка Banzhang 2007 р. 357 грам">
   <img src="img/img3.jpg" alt="Пуер 3" class="img3">
   <p class="caption">Пуер — коли хочеться просто бути</p>
   <p class="description">Чай Шу Пуер Золота Печатка Banzhang 2007 р. 357 грам</p>
@@ -65,9 +67,7 @@
 </div>
 
    <a href="products.html" class="more-button">Ще</a>
-  <a href="menu/index_menu.html" class="more-button">Ще</a>
-
- 
+   <!--<a href="menu/index_menu.html" class="more-button">Ще</a>-->
 
   <!-- Форма замовлення -->
   <div class="order-form" id="orderForm">
@@ -87,6 +87,8 @@
   
   <!-- Кнопка для открытия корзини -->
 <button class="cart-button">🛒 Кошик (<span id="cart-count">0</span>)</button>
+
+
 
 <!-- Уведомление о добавлении в корзину -->
 <div id="cart-modal" class="floating-modal">
@@ -123,6 +125,7 @@
   </div>
 </div>
 
+  <script src="js/script_products.js"></script>
   <script src="js/promo-modal.js"></script>
   <script src="js/script.js"></script>
 </body>
