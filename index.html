@@ -103,6 +103,27 @@
   <ul id="cart-items"></ul>
 <button id="checkout-button" onclick="checkout()">Оформити замовлення</button>
 </div>
-  <script src="script.js"></script>
+
+
+<!-- Кнопка % -->
+<button id="promo-button" class="promo-button">%</button>
+
+<!-- Модалка акції -->
+<div id="promo-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-promo" class="close">&times;</span>
+    <h2>🎉 Знижка -7% тільки зараз!</h2>
+    <p>Замовляй товари до закінчення таймера та отримай знижку!</p>
+    
+    <div style="margin: 20px 0; font-size: 18px; color: #e63946;">
+      ⏳ Залишилось: <span id="promo-timer">05:00</span>
+    </div>
+    
+    <button id="promo-use-btn" class="promo-use-btn">Використати знижку</button>
+  </div>
+</div>
+
+  <script src="js/promo-modal.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
