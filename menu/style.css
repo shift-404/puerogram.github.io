@@ -12,6 +12,9 @@ body {
   max-height: 500px;
   overflow: hidden;
   background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slides {
@@ -23,14 +26,18 @@ body {
 .slide {
   flex: 0 0 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain; /* чтобы не обрезалось */
+  width: auto;
+  height: 100%;
   max-height: 500px;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 /* Кнопки слайдера */
@@ -122,7 +129,6 @@ body {
 
   .slide img {
     max-height: 240px;
-    object-fit: contain;
   }
 
   .slider-btn {
@@ -131,7 +137,7 @@ body {
   }
 
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 12px;
     row-gap: 20px;
     padding: 20px 10px;
@@ -157,24 +163,14 @@ body {
 @media (max-width: 480px) {
   .slider {
     max-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .slide img {
-    width: auto;
-    height: 100%;
     max-height: 200px;
-    max-width: 100%;
-    object-fit: contain;
   }
-}
-
-
 
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* сохраняем 2 карточки даже на очень узком */
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
     row-gap: 15px;
     padding: 10px;
