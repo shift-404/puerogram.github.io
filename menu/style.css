@@ -157,11 +157,19 @@ body {
 @media (max-width: 480px) {
   .slider {
     max-height: 200px;
+    display: flex;
+    align-items: center; /* Центрируем изображение по вертикали */
+    justify-content: center; /* Центрируем изображение по горизонтали */
   }
 
   .slide img {
+    width: auto; /* убираем 100% ширину */
+    height: 100%; /* пусть вписывается по высоте */
     max-height: 200px;
+    object-fit: contain;
   }
+}
+
 
   .product-grid {
     grid-template-columns: repeat(2, 1fr); /* сохраняем 2 карточки даже на очень узком */
