@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #121212; /* тёмный фон */
+  background-color: #121212;
   color: #ffffff;
 }
 
@@ -29,7 +29,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain; /* чтобы не обрезалось */
   max-height: 500px;
 }
 
@@ -101,7 +101,7 @@ body {
 .product-card img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -114,54 +114,68 @@ body {
   font-size: 14px;
 }
 
-/* Адаптация для телефонов и планшетов */
-@media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-    row-gap: 15px;
-    padding: 10px;
+/* === Адаптация для планшетов и телефонов === */
+@media (max-width: 768px) {
+  .slider {
+    max-height: 240px;
   }
 
-  .product-card {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .product-card p {
-    font-size: 12px;
-    padding: 8px;
-  }
-}
-
-
-  .section-title {
-    font-size: 18px;
-    margin: 15px;
+  .slide img {
+    max-height: 240px;
+    object-fit: contain;
   }
 
   .slider-btn {
     font-size: 18px;
     padding: 8px 12px;
   }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
+    column-gap: 12px;
+    row-gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 160px;
+    margin: auto;
+  }
+
+  .product-card p {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    margin: 15px;
+  }
 }
 
 @media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: 1fr; /* 1 карточка в ряд на очень узких экранах */
-  }
-}
-@media (max-width: 768px) {
   .slider {
-    max-height: 220px; /* ниже, чем на ПК */
+    max-height: 200px;
   }
 
   .slide img {
-    max-height: 220px;
-    object-fit: cover;
+    max-height: 200px;
   }
 
-  .slider-btn {
-    font-size: 18px;
-    padding: 6px 10px;
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* сохраняем 2 карточки даже на очень узком */
+    column-gap: 10px;
+    row-gap: 15px;
+    padding: 10px;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-card p {
+    font-size: 12px;
+    padding: 8px;
   }
 }
