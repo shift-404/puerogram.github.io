@@ -158,17 +158,19 @@ body {
   .slider {
     max-height: 200px;
     display: flex;
-    align-items: center; /* Центрируем изображение по вертикали */
-    justify-content: center; /* Центрируем изображение по горизонтали */
+    align-items: center;
+    justify-content: center;
   }
 
   .slide img {
-    width: auto; /* убираем 100% ширину */
-    height: 100%; /* пусть вписывается по высоте */
+    width: auto;
+    height: 100%;
     max-height: 200px;
+    max-width: 100%;
     object-fit: contain;
   }
 }
+
 
 
   .product-grid {
