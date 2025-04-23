@@ -115,7 +115,7 @@ body {
 }
 
 /* === Адаптация для планшетов и телефонов === */
-@media (max-width: 300px) {
+@media (max-width: 768px) {
   .slider {
     max-height: 240px;
   }
