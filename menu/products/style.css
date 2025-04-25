@@ -22,8 +22,9 @@ header, footer {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Центрируем карточки */
+  justify-content: center; /* Центрируем весь ряд */
   gap: 20px;
+  max-width: 1020px; /* 3 карточки по 320px + 2*20px gap */
 }
 
 /* Карточка товара */
@@ -33,7 +34,7 @@ header, footer {
   border-radius: 5px;
   padding: 20px;
   text-align: center;
-  flex: 0 1 300px; /* Фиксированная ширина как на скрине */
+  flex: 0 1 320px; /* Жестко фиксируем ширину карточки как на оригинале */
   box-sizing: border-box;
 }
 
@@ -49,7 +50,8 @@ header, footer {
 @media (max-width: 768px) {
   .container {
     gap: 15px;
-    justify-content: space-between; /* Возвращаем старое поведение */
+    justify-content: space-between;
+    max-width: 100%; /* Убираем ограничение */
   }
 
   .product {
