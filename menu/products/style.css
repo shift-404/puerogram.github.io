@@ -17,6 +17,7 @@ header, footer {
 }
 /* Контейнер с карточками товаров */
 .container {
+  margin-top: 20px; /* или любое нужное вам значение */
   width: 100%;
   margin: 0 auto;
   padding: 0;
