@@ -175,8 +175,9 @@ function initCartSystem() {
 
 const message = `📦 Нове замовлення:
 🫖 Замовлено:\n${orderList}
-ПІБ: ${name}
+👤 ПІБ: ${name}
 📞 Телефон: ${phone}
+🏠 Адреса: ${address || "Не вказано"}
 📨 Коментар: ${comment || "Немає"}
 🎁 Знижка використана: ${promoUsed}`;
 
