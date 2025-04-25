@@ -39,20 +39,22 @@ header, footer {
   .container {
     display: flex;
     flex-wrap: wrap;
- 
+    justify-content: space-between;
+    padding: 0; /* Убираем отступы */
+    gap: 10; /* Можно задать например gap: 10px; если нужно пространство между карточками */
   }
 
   .product {
-    width: calc(50% - 20px); /* Учитываем отступы */
-    margin: 10px; /* Уменьшаем отступы между карточками */
-    box-sizing: border-box; /* Учитываем отступы и границы в ширине */
+    width: 50%; /* Ровно половина ширины */
+    box-sizing: border-box;
   }
 
   .product img {
-    width: 100%; /* Устанавливаем ширину изображения на 100% */
-    height: auto; /* Автоматически подстраиваем высоту */
+    width: 100%;
+    height: auto;
   }
 }
+
 .caption {
   font-size: 1em;
   color: #333;
