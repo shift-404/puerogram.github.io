@@ -17,17 +17,20 @@ header, footer {
 }
 
 .container {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  gap: 0;
 }
 
 .product {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin: 20px 0;
+  width: 100%; /* по умолчанию на десктопе */
+  box-sizing: border-box;
+  margin: 0;
   padding: 20px;
-  text-align: center;
 }
 .product img {
   border-radius: 5px;
@@ -35,13 +38,19 @@ header, footer {
   height: 300px;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .product {
+    width: 50%;
+  }
+}
 @media (max-width: 768px) {
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0; /* Убираем отступы */
-    gap: 10; /* Можно задать например gap: 10px; если нужно пространство между карточками */
+    gap: 0; /* Можно задать например gap: 10px; если нужно пространство между карточками */
   }
 
   .product {
