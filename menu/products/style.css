@@ -37,15 +37,16 @@ header, footer {
 }
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* на ПК 4 в ряд */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
 }
 
 @media (max-width: 768px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* на телефоні 2 в ряд */
+    grid-template-columns: repeat(2, 1fr); /* 2 в ряд на телефоні */
   }
 }
+
 
 
 .caption {
