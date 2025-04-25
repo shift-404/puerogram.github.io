@@ -1,0 +1,301 @@
+body {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: rgba(92, 60, 60, 0.8);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Контейнер с карточками товаров */
+.container {
+  margin-top: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Центрируем весь ряд */
+  gap: 20px;
+  max-width: 1020px; /* 3 карточки по 320px + 2*20px gap */
+}
+
+/* Карточка товара */
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  flex: 0 1 320px; /* Жестко фиксируем ширину карточки как на оригинале */
+  box-sizing: border-box;
+}
+
+/* Изображение товара */
+.product img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .container {
+    gap: 15px;
+    justify-content: space-between;
+    max-width: 100%; /* Убираем ограничение */
+  }
+
+  .product {
+    flex: 1 1 calc(50% - 15px);
+    margin: 0;
+    padding: 15px;
+  }
+}
+.caption {
+  font-size: 1em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1.2em;
+  color: #444;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.cost {
+  font-size: 1.5em;
+  color: black;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.button {
+  background: #5c3c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(110, 75, 75, 0.9);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.back-button:hover {
+  background-color: rgba(129, 89, 89, 0.95);
+}
+
+.back-button svg {
+  pointer-events: none;
+}
+
+.cart-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(110, 75, 75, 0.9);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  background-color: rgba(129, 89, 89, 0.95);
+}
+
+.cart-container {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  background: rgba(255, 250, 248, 0.95);
+  color: #333;
+  border: 2px solid #a86d6d;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 1000;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cart-container.show {
+  display: block;
+}
+
+.cart-container h3 {
+  margin-top: 0;
+  color: #5c3c3c;
+  text-align: center;
+}
+
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.cart-container li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#checkout-button {
+  width: 100%;
+  margin-top: 10px;
+  background: #5c3c3c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#checkout-button:hover {
+  background: #7b4f4f;
+}
+
+.order-form {
+  display: none;
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Модальное окно оформления */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Уведомление: товар добавлен */
+.floating-modal {
+  position: fixed;
+  top: 70px;
+  right: 30px;
+  background: rgba(255, 250, 248, 0.95);
+  color: #333;
+  padding: 15px 20px;
+  border: 2px solid #a86d6d;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease-out;
+  width: 280px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.floating-modal.show {
+  display: block;
+}
+
+.floating-modal p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.floating-modal button {
+  margin: 5px 8px 0 0;
+  padding: 6px 12px;
+  background: #5c3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.floating-modal button:hover {
+  background: #7b4f4f;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
