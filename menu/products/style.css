@@ -15,49 +15,43 @@ header, footer {
   padding: 40px;
   text-align: center;
 }
-css
 
 .container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; /* Располагаем карточки вертикально */
-  align-items: center; /* Центрируем карточки по горизонтали */
-  gap: 20px; /* Расстояние между карточками */
+  width: 90%;
+  margin: auto;
 }
 
-/* Карточка товара */
 .product {
   background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin: 20px 0;
   padding: 20px;
   text-align: center;
-  width: 90%; /* Устанавливаем ширину карточки — можно менять под вкус */
-  max-width: 600px; /* Ограничиваем максимальную ширину */
-  box-sizing: border-box;
 }
 
-/* Изображения в карточках */
 .product img {
   border-radius: 5px;
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 
 /* Мобильная версия */
 @media (max-width: 768px) {
   .container {
-    gap: 15px; /* Меньше расстояние между карточками на мобильных */
+    gap: 15px; /* Добавляем расстояние между карточками на телефонах */
   }
 
   .product {
-    width: 95%; /* Почти во всю ширину экрана */
-    padding: 15px;
+    flex: 1 1 calc(50% - 15px); /* Две карточки в ряд с учётом gap */
+    margin: 0; /* Убираем внешние отступы между карточками */
+    padding: 15px; /* Меньше отступ внутри карточки для экономии места */
   }
+
+  /* Редактировать расстояние между карточками на телефоне можно через gap в .container */
 }
+
   .product img {
     width: 100%;
     height: auto;
