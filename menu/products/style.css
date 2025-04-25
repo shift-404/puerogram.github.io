@@ -15,44 +15,50 @@ header, footer {
   padding: 40px;
   text-align: center;
 }
-
+/* Контейнер с карточками товаров */
 .container {
-  width: 90%;
-  margin: auto;
+  width: 100%; /* Растягиваем контейнер на всю ширину экрана */
+  margin: 0; /* Убираем внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Распределяем карточки равномерно */
+  gap: 20px; /* Пространство между карточками — видно на ПК */
 }
 
+/* Карточка товара */
 .product {
-  background: white; /* обязательно, чтобы не было прозрачности */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin: 20px 0;
+  background: white; /* Белый фон обязателен */
+  border: 1px solid #ddd; /* Светло-серая рамка */
+  border-radius: 5px; /* Скругление углов */
   padding: 20px;
   text-align: center;
+  flex: 1 1 calc(33.333% - 20px); /* Три карточки в ряд с учётом gap */
+  box-sizing: border-box;
 }
 
+/* Изображение товара */
 .product img {
   border-radius: 5px;
-  width: 300px;
-  height: 300px;
+  width: 100%; /* Занимает всю ширину карточки */
+  height: auto;
   object-fit: cover;
 }
 
+/* Мобильная версия */
 @media (max-width: 768px) {
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    gap: 0;
+    gap: 15px; /* Добавляем расстояние между карточками на телефонах */
   }
 
   .product {
-    width: 50%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 20px;
-    background: white; /* вернём белый фон для телефонов */
+    flex: 1 1 calc(50% - 15px); /* Две карточки в ряд с учётом gap */
+    margin: 0; /* Убираем внешние отступы между карточками */
+    padding: 15px; /* Меньше отступ внутри карточки для экономии места */
   }
+
+  /* Редактировать расстояние между карточками на телефоне можно через gap в .container */
+}
 
   .product img {
     width: 100%;
@@ -297,3 +303,4 @@ header, footer {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
