@@ -21,7 +21,7 @@ function updateCartCount() {
   if (cartCountElem) cartCountElem.innerText = totalCount;
 }
 
-addToCart(product.description, product.image) {
+function addToCart(productName, imageUrl) {
   loadCart();
   const existingItem = cart.find(item => item.name === productName);
   if (existingItem) {
@@ -35,6 +35,7 @@ addToCart(product.description, product.image) {
   selectedProduct = productName;
   showModal();
 }
+
 
 function showModal() {
   const modal = document.getElementById("cart-modal");
