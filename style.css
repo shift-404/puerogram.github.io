@@ -490,3 +490,27 @@ header, footer {
   max-width: 90%;
   text-align: center;
 }
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(110, 75, 75, 0.9);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.back-button:hover {
+  background-color: rgba(129, 89, 89, 0.95);
+}
+
+.back-button svg {
+  pointer-events: none;
+}
