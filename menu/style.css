@@ -1,13 +1,15 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 
 /* Слайдер */
 .slider {
+  border-radius: 50px;
   position: relative;
   width: 100%;
   height: auto;
