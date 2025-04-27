@@ -31,7 +31,8 @@ function renderProductPlaceholders() {
           <p class="caption">${product.name}</p>
           <p class="description">${product.description}</p>
           <p class="cost">${product.price}</p>
-          <button class="order-button button" onclick="addToCart('${product.description}', '${product.image}')">Замовити</button>
+          <button class="order-button button" onclick="addToCart('${product.name}', '${product.image}')">Замовити</button>
+
         </div>
       `;
     }
