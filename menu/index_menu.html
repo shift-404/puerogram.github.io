@@ -6,6 +6,13 @@
   <title>Магазин чаю</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<button class="back-button" onclick="history.back()" title="Назад">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+  </svg>
+</button>
+
 <body>
   <!-- Слайдер -->
   <div class="slider">
@@ -14,8 +21,19 @@
     <div class="slide"><img src="img/slide3.jpg"></div>
     <div class="slide"><img src="img/slide1.jpg"></div>
   </div>
-  <button class="slider-btn left" id="prev">←</button>
-  <button class="slider-btn right" id="next">→</button>
+  <button class="slider-btn left" id="prev">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M15 18l-6-6 6-6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<button class="slider-btn right" id="next">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M9 6l6 6-6 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+
 </div>
 
 
