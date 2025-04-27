@@ -21,7 +21,7 @@ function updateCartCount() {
   if (cartCountElem) cartCountElem.innerText = totalCount;
 }
 
-function addToCart(productName, imageUrl) {
+addToCart(product.description, product.image) {
   loadCart();
   const existingItem = cart.find(item => item.name === productName);
   if (existingItem) {
