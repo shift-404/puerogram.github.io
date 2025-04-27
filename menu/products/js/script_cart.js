@@ -23,6 +23,8 @@ function updateCartCount() {
 
 function addToCart(productName, imageUrl) {
   loadCart();
+  console.log("Добавляется в корзину:", productName, imageUrl); // Лог в консоль
+
   const existingItem = cart.find(item => item.name === productName);
   if (existingItem) {
     existingItem.count++;
