@@ -20,7 +20,7 @@ header, footer {
 
 .product {
   background: white;
-  border: 1px solid #ddd;
+  border: 5px solid #1e1e1e;
   border-radius: 5px;
   margin: 20px 0;
   padding: 20px;
@@ -332,32 +332,8 @@ header, footer {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.back-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #6e4b4b;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  z-index: 999;
-}
 
-.back-button:hover {
-  background-color: #815959;
-}
 
-.back-button svg {
-  pointer-events: none;
-}
 .modal {
   position: fixed;
   top: 0;
@@ -393,7 +369,6 @@ header, footer {
 .hidden {
   display: none;
 }
-/* Кнопка зверху зліва */
 .promo-button {
   position: fixed;
   top: 20px;
@@ -417,7 +392,6 @@ header, footer {
   line-height: 1;
   padding: 0;
 }
-
 
 .promo-button:hover {
   background-color:  #e74c3c;
@@ -496,7 +470,7 @@ header, footer {
   background-color: #ccc;
   cursor: not-allowed;
 }
- 
+
 /* Уведомление акції */
 .promo-notice {
   position: fixed;
