@@ -1038,189 +1038,181 @@
     "old_price": "400 ₴",
     "image": "img/img1001.jpg"
   },
-  {
+   {
     "id": "1200",
     "name": "Чай Ті Гуань Інь Анси 125г",
     "description": "",
-    "price": "242 ₴",
-    "old_price": "272 ₴",
+    "price": "272 ₴",
+    "old_price": "242 ₴",
     "image": "img/img1200.jpg"
   },
   {
     "id": "1201",
-    "name": "Чай Тегуаньінь Фудзія Улун 100 грамів",
+    "name": "Чай Ті Гуань Інь фабрики Runhu Улун в подарунковому тубусі",
     "description": "",
-    "price": "190 ₴",
-    "old_price": "190 ₴",
+    "price": "460 ₴",
+    "old_price": "360 ₴",
     "image": "img/img1201.jpg"
   },
   {
     "id": "1202",
-    "name": "Чай Ті Гуань Інь Альпійський луг 320 грамм",
+    "name": "Чай Тегуаньінь Фудзія Улун 100 грамів",
     "description": "",
-    "price": "415 ₴",
-    "old_price": "460 ₴",
+    "price": "190 ₴",
+    "old_price": "190 ₴",
     "image": "img/img1202.jpg"
   },
   {
     "id": "1203",
-    "name": "Чай Ті Гуань Інь  Улун 100 грамів",
+    "name": "Чай Ті Гуань Інь Альпійський луг 320 грамм",
     "description": "",
-    "price": "195 ₴",
-    "old_price": "220 ₴",
+    "price": "460 ₴",
+    "old_price": "460 ₴",
     "image": "img/img1203.jpg"
   },
   {
     "id": "1204",
-    "name": "Чай Ті Гуань Інь Анси Улун 50 грамм (розсип)",
+    "name": "Чай Ті Гуань Інь Улун 100 грамів",
     "description": "",
-    "price": "120 ₴",
-    "old_price": "198 ₴",
+    "price": "220 ₴",
+    "old_price": "195 ₴",
     "image": "img/img1204.jpg"
   },
   {
     "id": "1205",
-    "name": "Чай ТІ Гуань Інь Фудзія Улун 100 грамів",
+    "name": "Чай Ті Гуань Інь Анси Улун 50 грамм (розсип)",
     "description": "",
-    "price": "170 ₴",
-    "old_price": "190 ₴",
+    "price": "120 ₴",
+    "old_price": "120 ₴",
     "image": "img/img1205.jpg"
   },
   {
     "id": "1206",
-    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 500 грамм",
+    "name": "Чай ТІ Гуань Інь Фудзія Улун 100 грамів",
     "description": "",
-    "price": "640 ₴",
-    "old_price": "700 ₴",
+    "price": "190 ₴",
+    "old_price": "190 ₴",
     "image": "img/img1206.jpg"
   },
   {
     "id": "1207",
-    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 50 грамм",
+    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 500 грамм",
     "description": "",
-    "price": "118 ₴",
-    "old_price": "150 ₴",
+    "price": "700 ₴",
+    "old_price": "640 ₴",
     "image": "img/img1207.jpg"
   },
   {
     "id": "1208",
-    "name": "Чай Ті Гуань Інь Фудзия Улун 200 грамм",
+    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 50 грамм",
     "description": "",
-    "price": "355 ₴",
-    "old_price": "390 ₴",
+    "price": "150 ₴",
+    "old_price": "118 ₴",
     "image": "img/img1208.jpg"
   },
   {
     "id": "1209",
-    "name": "Чай Ті Гуань Інь Анси 50 грам",
+    "name": "Чай Ті Гуань Інь Фудзия Улун 200 грамм",
     "description": "",
-    "price": "110 ₴",
-    "old_price": "150 ₴",
+    "price": "390 ₴",
+    "old_price": "355 ₴",
     "image": "img/img1209.jpg"
   },
   {
     "id": "1210",
-    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 100 грамм",
+    "name": "Чай Ті Гуань Інь Анси 50 грам",
     "description": "",
-    "price": "175 ₴",
-    "old_price": "200 ₴",
+    "price": "150 ₴",
+    "old_price": "110 ₴",
     "image": "img/img1210.jpg"
   },
   {
     "id": "1211",
-    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 200 грамм",
+    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 100 грамм",
     "description": "",
-    "price": "350 ₴",
-    "old_price": "350 ₴",
+    "price": "200 ₴",
+    "old_price": "175 ₴",
     "image": "img/img1211.jpg"
   },
   {
     "id": "1212",
-    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 300 грамм",
+    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 200 грамм",
     "description": "",
-    "price": "480 ₴",
-    "old_price": "480 ₴",
+    "price": "350 ₴",
+    "old_price": "350 ₴",
     "image": "img/img1212.jpg"
   },
   {
     "id": "1213",
-    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 1000 грамм",
+    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 300 грамм",
     "description": "",
-    "price": "1600 ₴",
-    "old_price": "1600 ₴",
+    "price": "480 ₴",
+    "old_price": "480 ₴",
     "image": "img/img1213.jpg"
   },
   {
     "id": "1214",
-    "name": "Чай Ті Гуань Інь Anxi с ароматом орхидеи 250 гр",
+    "name": "Чай Ті Гуань Інь Yangran Фуцзянь Анси 1000 грамм",
     "description": "",
-    "price": "330 ₴",
-    "old_price": "390 ₴",
+    "price": "1600 ₴",
+    "old_price": "1600 ₴",
     "image": "img/img1214.jpg"
   },
   {
     "id": "1215",
-    "name": "Чай Ті Гуань Інь Альпійський луг 100 грамм",
+    "name": "Чай Ті Гуань Інь Anxi с ароматом орхидеи 250 гр",
     "description": "",
-    "price": "180 ₴",
-    "old_price": "180 ₴",
+    "price": "390 ₴",
+    "old_price": "315 ₴",
     "image": "img/img1215.jpg"
   },
   {
     "id": "1216",
-    "name": "Чай Ті Гуань Інь Альпійський луг 50грамм",
+    "name": "Чай Ті Гуань Інь Альпійський луг 100 грамм",
     "description": "",
-    "price": "110 ₴",
-    "old_price": "110 ₴",
+    "price": "180 ₴",
+    "old_price": "180 ₴",
     "image": "img/img1216.jpg"
   },
   {
     "id": "1217",
-    "name": "Чай Ті Гуань Інь Альпійський луг 200 грамм",
+    "name": "Чай Ті Гуань Інь Альпійський луг 50грамм",
     "description": "",
-    "price": "330 ₴",
-    "old_price": "330 ₴",
+    "price": "110 ₴",
+    "old_price": "110 ₴",
     "image": "img/img1217.jpg"
   },
   {
     "id": "1218",
-    "name": "Чай Ті Гуань Інь фабрики Runhu Улун в подарунковому тубусі",
+    "name": "Чай Ті Гуань Інь Альпійський луг 200 грамм",
     "description": "",
-    "price": "370 ₴",
-    "old_price": "460 ₴",
+    "price": "330 ₴",
+    "old_price": "330 ₴",
     "image": "img/img1218.jpg"
   },
   {
     "id": "1219",
     "name": "Чай Ті Гуань Інь Альпійський луг 300 грамм",
     "description": "",
-    "price": "415 ₴",
-    "old_price": "450 ₴",
+    "price": "450 ₴",
+    "old_price": "415 ₴",
     "image": "img/img1219.jpg"
   },
   {
     "id": "1220",
-    "name": "Чай Ті Гуань Інь ООЛОНГ ( темний улун ) обсмажений тонізуючий китайський чай",
+    "name": "Чай Ті Гуань Інь Анси 250 грамм",
     "description": "",
-    "price": "450 ₴",
-    "old_price": "450 ₴",
+    "price": "420 ₴",
+    "old_price": "380 ₴",
     "image": "img/img1220.jpg"
   },
   {
     "id": "1221",
-    "name": "Чай Ті Гуань Інь Анси 250 грамм",
-    "description": "",
-    "price": "380 ₴",
-    "old_price": "420 ₴",
-    "image": "img/img1221.jpg"
-  },
-  {
-    "id": "1222",
     "name": "Чай Тегуаньїнь Османтусовий Альпійський (100 грамів) 2024 рік",
     "description": "",
     "price": "260 ₴",
     "old_price": "260 ₴",
-    "image": "img/img1222.jpg"
+    "image": "img/img1221.jpg"
   },
   {
     "id": "1300",
