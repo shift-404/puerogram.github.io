@@ -1216,25 +1216,25 @@
   },
   {
     "id": "1300",
-    "name": "Чай Да Хун Пао справжній Фуцзянь ( Червоний халат )",
-    "description": "",
-    "price": "280 ₴",
-    "old_price": "280 ₴",
-    "image": "img/img1300.jpg"
-  },
-  {
-    "id": "1301",
     "name": "Чай Да Хун Пао преміум 150 грам",
     "description": "",
     "price": "280 ₴",
     "old_price": "300 ₴",
+    "image": "img/img1300.jpg"
+  },
+  {
+    "id": "1301",
+    "name": "Чай Да Хун Пао справжній Фуцзянь ( Червоний халат )",
+    "description": "",
+    "price": "280 ₴",
+    "old_price": "280 ₴",
     "image": "img/img1301.jpg"
   },
   {
     "id": "1302",
     "name": "Чай Да Хун Пао 2023 (Чорний) провінція Фуцянь 125 грамів Улун",
     "description": "",
-    "price": "284 ₴",
+    "price": "299 ₴",
     "old_price": "299 ₴",
     "image": "img/img1302.jpg"
   },
@@ -1242,7 +1242,7 @@
     "id": "1303",
     "name": "Чай Да Хун Пао Wuyi Star",
     "description": "",
-    "price": "298 ₴",
+    "price": "318 ₴",
     "old_price": "318 ₴",
     "image": "img/img1303.jpg"
   },
@@ -1258,7 +1258,7 @@
     "id": "1305",
     "name": "Та хон пао чай 100 грамів",
     "description": "",
-    "price": "195 ₴",
+    "price": "220 ₴",
     "old_price": "220 ₴",
     "image": "img/img1305.jpg"
   },
@@ -1266,7 +1266,7 @@
     "id": "1306",
     "name": "Чай Да Хун Пао Чжунмін Фенчжоу Альпійський (Чорний Халат) 100 грамів",
     "description": "",
-    "price": "257 ₴",
+    "price": "270 ₴",
     "old_price": "270 ₴",
     "image": "img/img1306.jpg"
   },
@@ -1282,7 +1282,7 @@
     "id": "1308",
     "name": "Чай та хон пао 150 г",
     "description": "",
-    "price": "260 ₴",
+    "price": "270 ₴",
     "old_price": "290 ₴",
     "image": "img/img1308.jpg"
   },
@@ -1296,115 +1296,107 @@
   },
   {
     "id": "1310",
-    "name": "Чай Да Хун Пао Wuyi (Човинний Халат) Преміум 500 грамів",
+    "name": "Чай Да Хун Пао Вухань Рок Чай Улун 100 грамів",
     "description": "",
-    "price": "605 ₴",
-    "old_price": "700 ₴",
+    "price": "279 ₴",
+    "old_price": "299 ₴",
     "image": "img/img1310.jpg"
   },
   {
     "id": "1311",
-    "name": "Чай Да Хун Пао Рок фабрика Yongcha 100 г.",
-    "description": "",
-    "price": "230 ₴",
-    "old_price": "230 ₴",
-    "image": "img/img1311.jpg"
-  },
-  {
-    "id": "1312",
-    "name": "Чай Дахунпао Wuyishan Jinjunmei в бляшанці 50 грамів",
-    "description": "",
-    "price": "195 ₴",
-    "old_price": "225 ₴",
-    "image": "img/img1312.jpg"
-  },
-  {
-    "id": "1313",
-    "name": "Чай Да Хун Пао (Човань Халат) 125 грамів",
-    "description": "",
-    "price": "220 ₴",
-    "old_price": "250 ₴",
-    "image": "img/img1313.jpg"
-  },
-  {
-    "id": "1314",
-    "name": "Чай Да Хун Пао Рок фабрика Yongcha 50 г.",
-    "description": "",
-    "price": "138 ₴",
-    "old_price": "138 ₴",
-    "image": "img/img1314.jpg"
-  },
-  {
-    "id": "1315",
-    "name": "Чай Да Хун Пао преміальний Уишаньский Рок - чай ( Красний Халат ) 200 грамм",
-    "description": "",
-    "price": "298 ₴",
-    "old_price": "350 ₴",
-    "image": "img/img1315.jpg"
-  },
-  {
-    "id": "1316",
-    "name": "Чай Да Хун Пао Вухань Рок Чай Улун 100 грамів",
-    "description": "",
-    "price": "269 ₴",
-    "old_price": "299 ₴",
-    "image": "img/img1316.jpg"
-  },
-  {
-    "id": "1317",
     "name": "Чай Да Хун Пао преміальний Вішанський Рок — чай (Червоний Халат) 100 грамів",
     "description": "",
     "price": "180 ₴",
     "old_price": "180 ₴",
-    "image": "img/img1317.jpg"
+    "image": "img/img1311.jpg"
   },
   {
-    "id": "1318",
+    "id": "1312",
     "name": "Чай Да Хун Пао Чжунмін Фенчжоу Альпійський 50 г. (розсип)",
     "description": "",
     "price": "138 ₴",
     "old_price": "138 ₴",
-    "image": "img/img1318.jpg"
+    "image": "img/img1312.jpg"
   },
   {
-    "id": "1319",
+    "id": "1313",
     "name": "Чай Да Хун Пао Wuyi Улун (50 г. розсип)",
     "description": "",
     "price": "135 ₴",
     "old_price": "143 ₴",
-    "image": "img/img1319.jpg"
+    "image": "img/img1313.jpg"
   },
   {
-    "id": "1320",
+    "id": "1314",
     "name": "Чай Да Хун Пао Wuyi Улун (500 грамів)",
     "description": "",
     "price": "892 ₴",
     "old_price": "990 ₴",
-    "image": "img/img1320.jpg"
+    "image": "img/img1314.jpg"
   },
   {
-    "id": "1321",
+    "id": "1315",
     "name": "Чай Да Хун Пао (Човань Халат) 50 грамів",
     "description": "",
     "price": "138 ₴",
     "old_price": "138 ₴",
-    "image": "img/img1321.jpg"
+    "image": "img/img1315.jpg"
   },
   {
-    "id": "1322",
+    "id": "1316",
     "name": "Чай Да Хун Пао Wuyi Улун (100 грамів)",
     "description": "",
     "price": "220 ₴",
     "old_price": "250 ₴",
-    "image": "img/img1322.jpg"
+    "image": "img/img1316.jpg"
   },
   {
-    "id": "1323",
+    "id": "1317",
     "name": "Чай Да Хун Пао Wuyishan Jinjunmei (Човній Халат) 50 грамів розсип",
     "description": "",
     "price": "145 ₴",
     "old_price": "145 ₴",
-    "image": "img/img1323.jpg"
+    "image": "img/img1317.jpg"
+  },
+  {
+    "id": "1318",
+    "name": "Чай Да Хун Пао преміальний Уишаньский Рок - чай ( Красний Халат ) 200 грамм",
+    "description": "",
+    "price": "298 ₴",
+    "old_price": "350 ₴",
+    "image": "img/img1318.jpg"
+  },
+  {
+    "id": "1319",
+    "name": "Чай Да Хун Пао Рок фабрика Yongcha 50 г.",
+    "description": "",
+    "price": "138 ₴",
+    "old_price": "138 ₴",
+    "image": "img/img1319.jpg"
+  },
+  {
+    "id": "1320",
+    "name": "Чай Да Хун Пао (Човань Халат) 125 грамів",
+    "description": "",
+    "price": "220 ₴",
+    "old_price": "250 ₴",
+    "image": "img/img1320.jpg"
+  },
+  {
+    "id": "1321",
+    "name": "Чай Дахунпао Wuyishan Jinjunmei в бляшанці 50 грамів",
+    "description": "",
+    "price": "235 ₴",
+    "old_price": "235 ₴",
+    "image": "img/img1321.jpg"
+  },
+  {
+    "id": "1322",
+    "name": "Чай Да Хун Пао Рок фабрика Yongcha 250 г.",
+    "description": "",
+    "price": "385 ₴",
+    "old_price": "460 ₴",
+    "image": "img/img1322.jpg"
   },
   {
     "id": "1500",
