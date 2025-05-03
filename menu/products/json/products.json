@@ -1526,13 +1526,13 @@
     "old_price": "0 ₴",
     "image": "img/img1809.jpg"
   },
-  {
+ {
     "id": "1900",
     "name": "Чай Лапшан Сушонг Gongfu Чайна фабрика China Fengzhou 100 грамів",
     "description": "",
     "price": "290 ₴",
-    "old_price": "290 ₴",
-    "image": "img/img1900.jpg"
+    "old_price": "0 ₴",
+    "image": "img/img1901.jpg"
   },
   {
     "id": "1901",
@@ -1540,7 +1540,7 @@
     "description": "",
     "price": "210 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1901.jpg"
+    "image": "img/img1902.jpg"
   },
   {
     "id": "1902",
@@ -1548,7 +1548,7 @@
     "description": "",
     "price": "130 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1902.jpg"
+    "image": "img/img1903.jpg"
   },
   {
     "id": "1903",
@@ -1556,7 +1556,7 @@
     "description": "",
     "price": "360 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1903.jpg"
+    "image": "img/img1904.jpg"
   },
   {
     "id": "1904",
@@ -1564,7 +1564,7 @@
     "description": "",
     "price": "760 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1904.jpg"
+    "image": "img/img1905.jpg"
   },
   {
     "id": "1905",
@@ -1572,7 +1572,7 @@
     "description": "",
     "price": "135 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1905.jpg"
+    "image": "img/img1906.jpg"
   },
   {
     "id": "1906",
@@ -1580,7 +1580,7 @@
     "description": "",
     "price": "660 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1906.jpg"
+    "image": "img/img1907.jpg"
   },
   {
     "id": "1907",
@@ -1588,7 +1588,7 @@
     "description": "",
     "price": "199 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1907.jpg"
+    "image": "img/img1908.jpg"
   },
   {
     "id": "1908",
@@ -1596,7 +1596,7 @@
     "description": "",
     "price": "380 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1908.jpg"
+    "image": "img/img1909.jpg"
   },
   {
     "id": "1909",
@@ -1604,7 +1604,7 @@
     "description": "",
     "price": "195 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1909.jpg"
+    "image": "img/img1910.jpg"
   },
   {
     "id": "1910",
@@ -1612,7 +1612,7 @@
     "description": "",
     "price": "360 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1910.jpg"
+    "image": "img/img1911.jpg"
   },
   {
     "id": "1911",
@@ -1620,18 +1620,10 @@
     "description": "",
     "price": "145 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1911.jpg"
-  },
-  {
-    "id": "1912",
-    "name": "Чай Лапшанг Сушонг Пінтянгуань ( 2024г. 125 гр. )",
-    "description": "",
-    "price": "280 ₴",
-    "old_price": "0 ₴",
     "image": "img/img1912.jpg"
   },
   {
-    "id": "1913",
+    "id": "1912",
     "name": "Чай Лапсанг Сушонг Ynan 250 грамів",
     "description": "",
     "price": "380 ₴",
@@ -1639,12 +1631,20 @@
     "image": "img/img1913.jpg"
   },
   {
+    "id": "1913",
+    "name": "Чай Лапшан Сушонг фабрика Вішань Баймінлу ( Китайський копчений чорний чай) 250 грамів",
+    "description": "",
+    "price": "380 ₴",
+    "old_price": "0 ₴",
+    "image": "img/img1914.jpg"
+  },
+  {
     "id": "1914",
     "name": "Чай Лапшанг Сушонг Чженя Сяочкожун Вішань Їз го ІУ 100 г.",
     "description": "",
-    "price": "220 ₴",
+    "price": "250 ₴",
     "old_price": "0 ₴",
-    "image": "img/img1914.jpg"
+    "image": "img/img1915.jpg"
   },
   {
     "id": "1915",
@@ -1658,24 +1658,24 @@
     "id": "1916",
     "name": "Чай Пуер Wuyi Souchong Gongfu медовий чай 50 грамм",
     "description": "",
-    "price": "258 ₴",
-    "old_price": "280 ₴",
+    "price": "280 ₴",
+    "old_price": "0 ₴",
     "image": "img/img1917.jpg"
   },
   {
     "id": "1917",
     "name": "Чай Локшинг Сушонг 400 грамів",
     "description": "",
-    "price": "580 ₴",
-    "old_price": "700 ₴",
+    "price": "700 ₴",
+    "old_price": "0 ₴",
     "image": "img/img1918.jpg"
   },
   {
     "id": "1918",
     "name": "Чай Лапсанг Сушонг Чайна фабрика Ансі Жуйї 2024г.",
     "description": "",
-    "price": "468 ₴",
-    "old_price": "499 ₴",
+    "price": "499 ₴",
+    "old_price": "0 ₴",
     "image": "img/img1919.jpg"
   },
   {
